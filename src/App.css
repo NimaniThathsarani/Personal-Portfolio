@@ -826,6 +826,8 @@
 .footer-copy {
   color: var(--text-muted);
   font-size: 0.85rem;
+  text-align: center;
+  flex: 1;
 }
 
 .footer-socials {
