@@ -103,7 +103,10 @@ function Navbar() {
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#contact" className="nav-cta">Contact Me</a>
+        <a href="#contact">Contact</a>
+        <a href="/NIMANI_THATHSARANI.pdf" download="NIMANI_THATHSARANI_CV.pdf" className="nav-cta">
+           Download CV
+        </a>
       </div>
     </nav>
   );
@@ -124,7 +127,7 @@ function Hero() {
           <br />
           Thathsarani
         </h1>
-        <p className="hero-subtitle">&lt; Data Science Undergraduate /&gt;</p>
+        <p className="hero-subtitle">&lt; Data Science Undergraduate &gt;</p>
         <p className="hero-description">
           Passionate about turning raw data into meaningful insights. I build
           intelligent applications and elegant web experiences with modern
@@ -153,7 +156,6 @@ function About() {
   return (
     <section id="about" className="section">
       <div className="section-header reveal">
-        <span className="section-tag">{'// who i am'}</span>
         <h2 className="section-title">
           About <span>Me</span>
         </h2>
@@ -170,36 +172,16 @@ function About() {
         </div>
 
         <div className="about-text reveal">
-          <h3>Data Scientist & Developer</h3>
+          <h3>Data Science Undergraduate</h3>
           <p>
-            I'm an undergraduate in Data Science with a deep passion for
-            building intelligent systems and beautiful web applications. I
-            enjoy working at the intersection of data, algorithms, and design.
+            I’m a Data Science undergraduate passionate about building intelligent, data-driven solutions and modern web applications. I enjoy transforming raw data into meaningful insights through machine learning, analytics and visualization.
           </p>
           <p>
-            When I'm not analyzing datasets or training models, I'm crafting
-            full-stack web experiences using React, Node.js, and modern cloud
-            technologies. I believe great software is both functional and
-            beautiful.
+            Alongside data science, I love creating full-stack applications using React, Node.js, Python and cloud technologies. I’m especially interested in projects that combine AI with user-centered design to create impactful digital experiences.
           </p>
-
-          <div className="about-stats">
-            <div className="stat-card">
-              <div className="stat-icon"><FaCode /></div>
-              <div className="stat-number">10+</div>
-              <div className="stat-label">Projects</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-icon"><HiOutlineAcademicCap /></div>
-              <div className="stat-number">3+</div>
-              <div className="stat-label">Years Learning</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-icon"><HiOutlineCpuChip /></div>
-              <div className="stat-number">5+</div>
-              <div className="stat-label">Technologies</div>
-            </div>
-          </div>
+          <p>
+            I enjoy learning new technologies, solving real-world problems and building software that is both functional and visually engaging. Currently, I’m focused on improving my skills in machine learning engineering, data analytics and scalable web development.
+          </p>
         </div>
       </div>
     </section>
@@ -208,16 +190,16 @@ function About() {
 
 /* ─── Skills ─── */
 const SKILLS = [
-  { icon: <FaReact />,        name: "React",         level: "Advanced" },
-  { icon: <SiJavascript />,   name: "JavaScript",    level: "Advanced" },
-  { icon: <FaPython />,       name: "Python",        level: "Advanced" },
-  { icon: <FaNodeJs />,       name: "Node.js",       level: "Intermediate" },
-  { icon: <SiMongodb />,      name: "MongoDB",       level: "Intermediate" },
-  { icon: <SiPandas />,       name: "Pandas",        level: "Advanced" },
-  { icon: <SiScikitlearn />,  name: "Sci-kit Learn", level: "Intermediate" },
-  { icon: <FaGitAlt />,       name: "Git",           level: "Advanced" },
-  { icon: <SiExpress />,      name: "Express",       level: "Intermediate" },
-  { icon: <FaCss3Alt />,      name: "CSS",           level: "Advanced" },
+  { icon: <FaReact />,        name: "React",         },
+  { icon: <SiJavascript />,   name: "JavaScript",    },
+  { icon: <FaPython />,       name: "Python",        },
+  { icon: <FaNodeJs />,       name: "Node.js",       },
+  { icon: <SiMongodb />,      name: "MongoDB",       },
+  { icon: <SiPandas />,       name: "Pandas",        },
+  { icon: <SiScikitlearn />,  name: "Sci-kit Learn", },
+  { icon: <FaGitAlt />,       name: "Git",           },
+  { icon: <SiExpress />,      name: "Express",       },
+  { icon: <FaCss3Alt />,      name: "CSS",           },
 ];
 
 function Skills() {
@@ -225,7 +207,6 @@ function Skills() {
     <div className="section-bg section-full" id="skills">
       <div className="section-inner">
         <div className="section-header reveal">
-          <span className="section-tag">{'// what i know'}</span>
           <h2 className="section-title">
             My <span>Skills</span>
           </h2>
@@ -256,31 +237,28 @@ const PROJECTS = [
     id: 1,
     icon: <HiOutlineChartBar />,
     previewClass: "project-preview-1",
-    tags: ["Python", "Pandas", "ML"],
-    title: "Data Analytics Dashboard",
-    desc: "An interactive dashboard that visualises large datasets using Python, Pandas and Plotly. Includes predictive analytics powered by scikit-learn models.",
-    github: "#",
-    live: "#",
+    tags: ["Python", "Pandas", "ML", "React", "Node.js", "Express", "FastAPI", "scikit-learn", "MongoDB" ],
+    title: "AI Powered Printing Management System",
+    desc: "A full stack AI-powered printing management system for real world business operations. The system includes order management, scheduling, inventory, billing, and notifications, enhanced with an ML-based delay prediction model using Python and Scikit-learn to identify high-risk orders based on operational data.",
+    github: "https://github.com/NimaniThathsarani/ShanArts.git",
   },
   {
     id: 2,
     icon: <HiOutlineGlobeAlt />,
     previewClass: "project-preview-2",
-    tags: ["React", "Node.js", "MongoDB"],
-    title: "Full-Stack Web App",
-    desc: "A feature-rich MERN stack application with JWT authentication, REST API, real-time updates via WebSockets, and a responsive modern UI.",
-    github: "#",
-    live: "#",
+    tags: ["Python", "Pandas", "ML", "Uvicorn", "Docker", "Streamlit", "FastAPI", "scikit-learn", "MongoDB"],
+    title: "House Price Prediction System",
+    desc: "The Real-Time House Price Prediction System is an AI-powered web application that predicts house prices in real time using machine learning. The project demonstrates end-to-end MLOps concepts including data preprocessing, model training, FastAPI deployment, Docker containerization and cloud deployment in a production-style workflow.",
+    github: "https://github.com/NimaniThathsarani/Real-Time-House-Price-Prediction-System.git",
   },
   {
     id: 3,
     icon: <FaBrain />,
     previewClass: "project-preview-3",
-    tags: ["Python", "NLP", "Flask"],
-    title: "NLP Sentiment Analyser",
-    desc: "A natural language processing tool that analyses text sentiment using transformer models, deployed as a REST API with a clean React frontend.",
-    github: "#",
-    live: "#",
+    tags: ["React", "Node.js", "Railway", "MongoDB"],
+    title: "Pet Care Management System",
+    desc: "A mobile application designed to simplify and manage pet care services such as boarding, daycare, grooming and veterinary appointments. The system supports multiple user roles including customers and service managers, allowing users to easily register pets, book services, manage schedules, and track service updates in real time.",
+    github: "https://github.com/NimaniThathsarani/petcare-system.git",
   },
 ];
 
@@ -288,7 +266,6 @@ function Projects() {
   return (
     <section id="projects" className="section">
       <div className="section-header reveal">
-        <span className="section-tag">{"// what i've built"}</span>
         <h2 className="section-title">
           Featured <span>Projects</span>
         </h2>
@@ -305,12 +282,6 @@ function Projects() {
             <div className={`project-preview ${p.previewClass}`}>
               <span className="project-preview-icon">{p.icon}</span>
               <div className="project-overlay">
-                <a href={p.live} className="overlay-btn">
-                  <FaExternalLinkAlt /> Live Demo
-                </a>
-                <a href={p.github} className="overlay-btn ghost">
-                  <FaGithub /> GitHub
-                </a>
               </div>
             </div>
             <div className="project-body">
@@ -322,9 +293,6 @@ function Projects() {
               <h3 className="project-title">{p.title}</h3>
               <p className="project-desc">{p.desc}</p>
               <div className="project-links">
-                <a href={p.live} className="project-link primary">
-                  <FaRocket /> Live Demo
-                </a>
                 <a href={p.github} className="project-link secondary">
                   <FaStar /> GitHub
                 </a>
@@ -356,7 +324,6 @@ function Contact() {
     <div className="section-bg section-full" id="contact">
       <div className="section-inner">
         <div className="section-header reveal">
-          <span className="section-tag">{"// let's talk"}</span>
           <h2 className="section-title">
             Get In <span>Touch</span>
           </h2>
@@ -365,91 +332,33 @@ function Contact() {
 
         <div className="contact-wrapper">
           <div className="contact-info reveal">
-            <h3>Let's build something amazing together</h3>
             <p>
-              I'm currently open to internships, freelance projects, and
-              full-time opportunities. Whether you have a question or just want
-              to say hi — my inbox is always open!
+              I enjoy learning new technologies, solving real-world problems and building software that is both functional and visually engaging. Currently, I’m focused on improving my skills in machine learning engineering, data analytics and scalable web development.
             </p>
 
             <div className="contact-items">
-              <a href="mailto:nimani@email.com" className="contact-item">
+              <a href="mailto:nimani2thathsarani@gmail.com" className="contact-item">
                 <div className="contact-icon"><FaEnvelope /></div>
                 <div className="contact-item-text">
                   <strong>Email</strong>
-                  <span>nimani@email.com</span>
+                  <span>nimani2thathsarani@gmail.com</span>
                 </div>
               </a>
-              <a href="https://github.com/nimani" className="contact-item" target="_blank" rel="noreferrer">
+              <a href="https://github.com/NimaniThathsarani" className="contact-item" target="_blank" rel="noreferrer">
                 <div className="contact-icon"><FaGithub /></div>
                 <div className="contact-item-text">
                   <strong>GitHub</strong>
-                  <span>github.com/nimani</span>
+                  <span>github.com/NimaniThathsarani</span>
                 </div>
               </a>
-              <a href="https://linkedin.com/in/nimani" className="contact-item" target="_blank" rel="noreferrer">
+              <a href="https://linkedin.com/in/nimani-thathsarani" className="contact-item" target="_blank" rel="noreferrer">
                 <div className="contact-icon"><HiOutlineBriefcase /></div>
                 <div className="contact-item-text">
                   <strong>LinkedIn</strong>
-                  <span>linkedin.com/in/nimani</span>
+                  <span>linkedin.com/in/nimani-thathsarani</span>
                 </div>
               </a>
             </div>
-          </div>
-
-          <div className="contact-form reveal" style={{ transitionDelay: "0.15s" }}>
-            {sent ? (
-              <div style={{ textAlign: "center", padding: "60px 0" }}>
-                <div className="success-icon-wrapper">
-                  <HiOutlineSparkles />
-                </div>
-                <h3 style={{ marginBottom: "8px" }}>Message Sent!</h3>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Thanks for reaching out. I'll get back to you soon!
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={submit}>
-                <div className="form-group">
-                  <label htmlFor="name">Your Name</label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="John Doe"
-                    value={form.name}
-                    onChange={handle}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email">Email Address</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="john@example.com"
-                    value={form.email}
-                    onChange={handle}
-                    required
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell me about your project..."
-                    value={form.message}
-                    onChange={handle}
-                    required
-                  />
-                </div>
-                <button type="submit" className="form-submit">
-                  Send Message <HiOutlinePaperAirplane />
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </div>
@@ -463,16 +372,16 @@ function Footer() {
     <footer className="footer">
       <div className="footer-logo">NT.</div>
       <p className="footer-copy">
-        © 2026 Nimani Thathsarani · Built with React
+        © 2026 Nimani Thathsarani
       </p>
       <div className="footer-socials">
-        <a href="https://github.com/nimani" className="social-link" target="_blank" rel="noreferrer" aria-label="GitHub">
+        <a href="https://github.com/NimaniThathsarani" className="social-link" target="_blank" rel="noreferrer" aria-label="GitHub">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com/in/nimani" className="social-link" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <a href="https://linkedin.com/in/nimani-thathsarani" className="social-link" target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <FaLinkedinIn />
         </a>
-        <a href="mailto:nimani@email.com" className="social-link" aria-label="Email">
+        <a href="mailto:nimani2thathsarani@gmail.com" className="social-link" aria-label="Email">
           <FaEnvelope />
         </a>
       </div>

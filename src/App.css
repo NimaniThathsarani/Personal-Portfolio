@@ -652,10 +652,13 @@
 
 /* ===== CONTACT ===== */
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  max-width: 600px;
+  width: 100%;
 }
 
 .contact-info h3 {
@@ -668,6 +671,7 @@
   color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .contact-items {
